@@ -26,7 +26,7 @@ skyscanner_routes.post("/routes", function (req, res) {
     ]
 
     if (req.body["return_date"]) {
-        params.outboundDate = req.body["return_date"]
+        params.outboundPartialDate = req.body["return_date"]
         var tmp = params.originPlace
         params.originPlace = params.destinationPlace
         params.destinationPlace = tmp
