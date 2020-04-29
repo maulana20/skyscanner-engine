@@ -35,8 +35,12 @@ skyscanner_routes.post("/routes", function (req, res) {
 
     Promise.all(skyscanner_requests).then(function (results) {
         var result = {
-            depart_schedule: results,
+            depart_schedule: results[0],
             return_schedule: null
+        }
+
+        if (results.length > 1) {
+            result.return_schedule = results[1]
         }
 
         res.json({
