@@ -1,0 +1,23 @@
+{
+  "name": "skyscanner_engine",
+  "version": "1.0.0",
+  "description": "SkyScanner API Connection Engine For Flight Schedule Search",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "SkyScanner",
+    "Engine",
+    "ExpressJS",
+    "NodeJS"
+  ],
+  "author": "Maulana Saputra <maulanasaputra11091082@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "multer": "^1.4.2",
+    "request": "^2.88.0"
+  }
+}
