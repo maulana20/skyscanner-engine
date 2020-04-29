@@ -31,7 +31,7 @@ skyscanner_engine.use(function (req, res, next) {
 })
 
 // ROUTE CONFIG
-skyscanner_engine.use('/search', require("./app/search.route"))
+skyscanner_engine.use('/search', require("./app/routes.route"))
 skyscanner_engine.use("/airport", require("./app/airport.route"))
 skyscanner_engine.use("/cache", require("./app/cache.route"))
 
