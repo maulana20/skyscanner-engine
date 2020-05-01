@@ -22,7 +22,7 @@ app.use(function (req, res, next) {
 })
 
 // ROUTE CONFIG
-app.use('/search', require("./app/browser-flight"))
+app.use('/search', require("./app/browse-flight"))
 
 // RUN APPS
 app.listen(config.port, config.host, 511, function () {
